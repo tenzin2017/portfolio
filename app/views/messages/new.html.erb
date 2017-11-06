@@ -1,0 +1,22 @@
+<div class="container col-sm-6">
+<legend>Contact me</legend>
+<%= form_for @message, url: contact_path, html: {id: "contactForm"}, method: :post do |message_form| %>
+    <div class="control-group">
+      <%= message_form.text_field :name, placeholder: "Name", class: "form-control" %>
+    </div><br>
+
+    <div class="control-group">
+      <%= message_form.email_field :email, placeholder: "Email", class: "form-control"%>
+    </div><br>
+
+    <div class="control-group">
+      <%= message_form.text_area :content, placeholder: "Message", class: "form-control", rows: "10", cols: "100", style: "resize:none"%>
+    </div><br>
+
+
+    <div class="control-group">
+      <%= message_form.submit "Send Message", class: "btn btn-primary pull-left" %>
+    </div>
+
+<% end %>
+</div>
