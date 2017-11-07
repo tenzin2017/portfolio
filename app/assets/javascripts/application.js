@@ -16,15 +16,7 @@
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-function jumpScroll1() {
-     window.scroll(0,700); // horizontal and vertical scroll targets
-}
-function jumpScroll2() {
-     window.scroll(0,1850); // horizontal and vertical scroll targets
-}
-function jumpScroll3() {
-     window.scroll(0,2500); // horizontal and vertical scroll targets
-}
+
 
 $(window).scroll(function(){
   if($(this).scrollTop()>50){
@@ -33,3 +25,7 @@ $(window).scroll(function(){
     $('.navbar-dark').removeClass('bg-dark');
   }
 })
+
+document.getElementById("#aboutme").scrollIntoView()
+document.getElementById("#contactme").scrollIntoView()
+document.getElementById("#myPortfolio").scrollIntoView()

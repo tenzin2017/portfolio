@@ -1,5 +1,14 @@
 @import "bootstrap";
 
+@media screen and (min-width: 768px) {
+  .intro {
+  padding-top: 200px;
+  padding-bottom: 300px;
+
+  }
+
+}
+
 #mainNav {
   background-color: transparent;
 }
@@ -9,7 +18,6 @@ header{
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
 }
 .container {
   padding: 100px 0;
@@ -21,8 +29,7 @@ header{
   color: white;
   font-weight: 700;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 300px;
+
 }
 
 .featurette-divider {
