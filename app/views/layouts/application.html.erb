@@ -6,20 +6,22 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Russo+One" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+
+    <%#  Navigation Part %>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <a class="navbar-brand" href="#" style="font-size: 2rem">Lobsang Tenzin</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active mr-auto">
             <a class="nav-link" href="javascript:jumpScroll1()">Portfolio <span class="sr-only">(current)</span></a>
           </li>
@@ -36,55 +38,81 @@
       </div>
     </nav>
 
-    <div class="container-fluid bg-warning">
-      <div class="img">
-      <img src="http://www.iconarchive.com/download/i102645/graphicloads/flat-finance/person.ico", class="rounded mx-auto d-block", alt="">
-      <div class="intro">
-      <h1>LOBSANG TENZIN</h1>
-        <h4> Full Stack Web Developer</h4>
-      </div><%# intro %>
-    </div><%# img %>
-   </div><%# container-fluid %>
+     <%# Header Part %>
+    <header>
+      <div class="container">
+        <div class="intro">
+          <h1 style="font-size: 4rem">LOBSANG TENZIN</h1>
+          <h5> Full Stack Web Developer</h5><br>
+          <button type="button" class="btn btn-success">See My Profile</button>
+        </div>
+        </div>
+      </div>
+    </header>
 
-    <hr class="featurette-divider">
-
+    <%# Portfolio Part %>
     <div class="container">
-      <h1 class="text-center">Portfolio</h1>
-      <div class="row justify-content-around">
-          <div class="card" style="width: 25rem;">
-              <div class="thumnail">
-                <img class="img-fluid" src="http://www.freeiconspng.com/uploads/project-icon-2.jpg" alt="">
-              </div>
-          </div>
-          <div class="card" style="width: 25rem;">
-            <div class="card-body">
-              <div class="thumnail">
-                <img class="img-fluid" src="https://dcassetcdn.com/design_img/1549288/522389/522389_7892897_1549288_21c61853_image.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div><br>
-        <div class="row justify-content-around">
-            <div class="card" style="width: 25rem;">
-              <div class="card-body">
-                <div class="thumnail">
-                  <img class="img-fluid" src="http://www.clker.com/cliparts/K/K/I/0/3/U/dslr-camera.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="card" style="width: 25rem;">
-              <div class="card-body">
-                <div class="thumnail">
-                  <img class="img-fluid" src="https://dcassetcdn.com/design_img/1549288/522389/522389_7892897_1549288_21c61853_image.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div><br>
-    </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1> PORTFOLIO </h1>
+        </div>
+      </div>
 
-  </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <img class="img-fluid" src="https://i.pinimg.com/736x/00/25/01/002501beb71d57e43e0b2cc811b8b5db--icon-design-ui-design.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4 class="text-center">PROJECTS</h4>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <img class="img-fluid" src="https://cdn.dribbble.com/users/13536/screenshots/1023993/photoshop-flat.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4 class="text-center">TECH SKILLS</h4>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <img class="img-fluid" src="http://images.all-free-download.com/images/graphiclarge/hobby_design_elements_various_symbols_isolation_colorful_decoration_6827532.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4 class="text-center">HOBBIES</h4>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <img class="img-fluid" src="https://lonehillart.files.wordpress.com/2014/08/pieter-van-heerden-colourful-landscape-400-x-300.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4 class="text-center">PROJECTS</h4>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <img class="img-fluid" src="https://lonehillart.files.wordpress.com/2014/08/pieter-van-heerden-colourful-landscape-400-x-300.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4 class="text-center">PROJECTS</h4>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <img class="img-fluid" src="https://lonehillart.files.wordpress.com/2014/08/pieter-van-heerden-colourful-landscape-400-x-300.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4 class="text-center">PROJECTS</h4>
+            </div>
+        </div>
+      </div>
+      </div>
 
-    <hr class="featurette-divider">
+
+
+    <%# About Me Part %>
     <div class="container">
       <div class="about">
         <h1>About me</h1>
@@ -92,9 +120,8 @@
       </div>
     </div>
 
-    <hr class="featurette-divider">
 
-    <!-- contact me form -->
+    <%# Contact Me Part %>
     <div class="container col-sm-6">
         <form name="sentMessage" class="well" id="contactForm" method="post" action="" novalidate>
           <legend>Contact me</legend>
@@ -118,16 +145,28 @@
           <div id="success"> </div> <!-- For success/fail messages -->
           <button type="submit" class="btn btn-primary pull-left">Send Message</button><br>
         </form>
-      </div>
-      <div class="item">
-        <a href="#top"> go to top</a>
+    </div><br><br>
 
-      </div>
-    </div>
     <% if flash[:notice]%>
     <%= flash[:notice]%>
     <%end%>
 
     <%= yield %>
+    <%# Footer Part %>
+  <footer>
+    <div class="container-fluid bg-dark text-white">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright"> Copyright © LobsangTenzin 2017 </span>
+        </div>
+        <div class="col-md-4">
+          <a href="#"></a>
+        </div>
+        <div class="col-md-4">
+          <span class="copyright">Thank you for Visit </span>
+        </div>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>

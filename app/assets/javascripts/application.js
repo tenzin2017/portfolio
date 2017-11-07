@@ -25,6 +25,11 @@ function jumpScroll2() {
 function jumpScroll3() {
      window.scroll(0,2500); // horizontal and vertical scroll targets
 }
-$('a[href=#top]').click(function(){
-    $('html, body').animate({scrollTop:0}, 'slow');
-});
+
+$(window).scroll(function(){
+  if($(this).scrollTop()>50){
+    $('.navbar-dark').addClass('bg-dark');
+  } else {
+    $('.navbar-dark').removeClass('bg-dark');
+  }
+})

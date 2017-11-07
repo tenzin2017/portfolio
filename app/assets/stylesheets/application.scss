@@ -1,16 +1,29 @@
 @import "bootstrap";
 
+#mainNav {
+  background-color: transparent;
+}
+header{
+  background-image: url(https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/10303365_786435581413952_3744838580179311225_n.jpg?oh=9180db9b312f6c68e04a23f56bc699b7&oe=5AA2FAA2);
+  background-repeat:no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  padding: 100px 0;
+}
+
+
 .intro{
+  font-family: 'Julius Sans One', sans-serif;
+  color: white;
+  font-weight: 700;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 300px;
 }
-
-img{
-  padding-top: 15%;
-}
-
-// .container {
-//   height: 100vh;
-// }
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
@@ -19,4 +32,21 @@ img{
 .thumnail img {
   width: 100%;
   height: 100%;
+}
+
+footer {
+  line-height: 6rem;
+}
+
+.portfolio-link img:hover{
+  opacity: 0.8;
+  box-shadow: 0 0 30px green;
+}
+
+.nav-item:hover {
+  background-color: green;
+  border-radius: 10px;
+}
+.row {
+  padding-bottom: 3rem;
 }
